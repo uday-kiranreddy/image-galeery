@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import axios from "axios";
 
 
 function App() {
   const [photo, setPhoto] = useState("");
   const [loading, setLoading] = useState(false);
-  const [key, setkey] = useState("54l5AlzSLWM5EwFSM9zEC7lMxmSPH4llLfW8RjNl-5s");
+  const [key] = useState("54l5AlzSLWM5EwFSM9zEC7lMxmSPH4llLfW8RjNl-5s");
   const [result, setResult] = useState([]);
   function handleChange(e) {
     setPhoto(e.target.value);
@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       <div className="middle ">
-        <h1 className="heading">Image Gallery </h1>
+        <h1 className="heading">| Image Gallery |</h1>
         <input
           type="text"
           onChange={handleChange}
